@@ -84,6 +84,7 @@ $('#searchBtn').on('click', function(event){
     
     var history = JSON.parse(localStorage.getItem("searchHistory"))||[];
 
+    
     if(!history.includes(city) && !(city == "")){
         history.push(city);
         var searched = $(".searchHistory").append(`<li class="listItem" id="${size}">${city}</li>`);
